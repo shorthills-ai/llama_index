@@ -17,11 +17,11 @@ llama_packs/root.md
 
 ## Data Loaders
 
-The full set of data loaders are found on [LlamaHub](https://llamahub.ai/)
+The full set of data loaders is found on [LlamaHub](https://llamahub.ai/)
 
 ## Agent Tools
 
-The full set of agent tools are found on [LlamaHub](https://llamahub.ai/)
+The full set of agent tools is found on [LlamaHub](https://llamahub.ai/)
 
 ## LLMs
 
