@@ -56,7 +56,7 @@ Examples of this in the more traditional ML domain include [Giskard](https://doc
 
 It may be expensive to use GPT-4 to carry out evaluation especially as your dev set grows large.
 
-Metrics ensembling uses an ensemble of weaker signals (exact match, F1, ROUGE, BLEU, BERT-NLI and BERT-similarity) to predict the output of a more expensive evaluation methods that are closer to the gold labels (human-labelled/GPT-4).
+Metrics ensembling uses an ensemble of weaker signals (exact match, F1, ROUGE, BLEU, BERT-NLI and BERT-similarity) to predict the output of a more expensive evaluation methods that are closer to the gold labels (human-labeled/GPT-4).
 
 It is intended for two purposes:
 
