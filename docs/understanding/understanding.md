@@ -10,7 +10,7 @@ If you've already read our [high-level concepts](/getting_started/concepts.md) p
 
 There are a series of key steps involved in building any LLM-powered application, whether it's answering questions about your data, creating a chatbot, or an autonomous agent. Throughout our documentation, you'll notice sections are arranged roughly in the order you'll perform these steps while building your app. You'll learn about:
 
-- **[Using LLMs](/understanding/using_llms/using_llms.md)**: whether it's OpenAI or any number of hosted LLMs or a locally-run model of your own, LLMs are used at every step of the way, from indexing and storing to querying and parsing your data. LlamaIndex comes with a huge number of reliable, tested prompts and we'll also show you how to customize your own.
+- **[Using LLMs](/docs/understanding/using_llms/using_llms.md)**: whether it's OpenAI or any number of hosted LLMs or a locally-run model of your own, LLMs are used at every step of the way, from indexing and storing to querying and parsing your data. LlamaIndex comes with a huge number of reliable, tested prompts and we'll also show you how to customize your own.
 
 - **[Loading](/understanding/loading/loading.md)**: getting your data from wherever it lives, whether that's unstructured text, PDFs, databases, or APIs to other applications. LlamaIndex has hundreds of connectors to every data source over at [LlamaHub](https://llamahub.ai/).
 
