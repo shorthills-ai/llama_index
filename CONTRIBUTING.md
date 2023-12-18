@@ -41,7 +41,7 @@ A data loader ingests data in any format from anywhere into `Document` objects, 
 **Interface**:
 
 - `load_data` takes arbitrary arguments as input (e.g. path to data), and outputs a sequence of `Document` objects.
-- `lazy_load_data` takes arbitrary arguments as input (e.g. path to data), and outputs an iterable object of `Document` objects. This is a lazy version of `load_data`, which is useful for large datasets.
+- `lazy_load_data` takes arbitrary arguments as input (e.g. path to data), and outputs an iterable object of `Document` objects. This is a lazy version of `load_data`, which is useful for handling large datasets.
 
 > **Note**: If only `lazy_load_data` is implemented, `load_data` will be delegated to it.
 
