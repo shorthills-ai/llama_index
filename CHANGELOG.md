@@ -34,7 +34,7 @@
 
 - Feat/PgVector Support custom hnsw.ef_search and ivfflat.probes (#9420)
 - fix F1 score definition, update copyright year (#9424)
-- Change more than one image input for Replicate Multi-modal models from error to warning (#9360)
+- Change more than one image input to Replicate Multi-modal models from error to warning (#9360)
 - Removed GPT-Licensed `aiostream` dependency (#9403)
 - Fix result of BedrockEmbedding with Cohere model (#9396)
 - Only capture valid tool names in react agent (#9412)
@@ -172,7 +172,7 @@
 ### Bug Fixes / Nits
 
 - Fixed bug in formatting chat prompt templates when estimating chunk sizes (#9025)
-- Sandboxed Pandas execution, remidiate CVE-2023-39662 (#8890)
+- Sandboxed Pandas execution, remediate CVE-2023-39662 (#8890)
 - Restored `mypy` for Python 3.8 (#9031)
 - Loosened `dataclasses-json` version range,
   and removes unnecessary `jinja2` extra from `pandas` (#9042)
