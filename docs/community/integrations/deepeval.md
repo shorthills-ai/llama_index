@@ -74,7 +74,7 @@ gpt4 = OpenAI(temperature=0, model="gpt-4", api_key=api_key)
 service_context_gpt4 = ServiceContext.from_defaults(llm=gpt4)
 ```
 
-#### Getting a lLamaHub Loader
+#### Getting a LlamaHub Loader
 
 ```python
 from llama_index import download_loader
