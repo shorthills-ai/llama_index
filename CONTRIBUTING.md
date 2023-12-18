@@ -36,7 +36,7 @@ Below, we will describe what each module does, give a high-level idea of the int
 
 #### Data Loaders
 
-A data loader ingests data of any format from anywhere into `Document` objects, which can then be parsed and indexed.
+A data loader ingests data in any format from anywhere into `Document` objects, which can then be parsed and indexed.
 
 **Interface**:
 
