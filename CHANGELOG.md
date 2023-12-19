@@ -4,7 +4,31 @@
 
 ### Bug Fixes / Nits
 
+- Fixed `types-protobuf` from being a primary dependency (#9595)
+
+## [0.9.16] - 2023-12-18
+
+### New Features
+
+- agent refactor: step-wise execution (#9584)
+- Add OpenRouter, with Mixtral demo (#9464)
+- Add hybrid search to neo4j vector store (#9530)
+- Add support for auth service accounts for Google Semantic Retriever (#9545)
+
+### Bug Fixes / Nits
+
 - Fixed missing `default=None` for `LLM.system_prompt` (#9504)
+- Fix #9580 : Incorporate metadata properly (#9582)
+- Integrations: Gradient[Embeddings,LLM] - sdk-upgrade (#9528)
+- Add mixtral 8x7b model to anyscale available models (#9573)
+- Gemini Model Checks (#9563)
+- Update OpenAI fine-tuning with latest changes (#9564)
+- fix/Reintroduce `WHERE` filter to the Sparse Query for PgVectorStore (#9529)
+- Update Ollama API for ollama v0.1.16 (#9558)
+- ollama: strip invalid `formatted` option (#9555)
+- add a device in optimum push #9541 (#9554)
+- Title vs content difference for Gemini Embedding (#9547)
+- fix pydantic fields to float (#9542)
 
 ## [0.9.15] - 2023-12-13
 
@@ -34,7 +58,7 @@
 
 - Feat/PgVector Support custom hnsw.ef_search and ivfflat.probes (#9420)
 - fix F1 score definition, update copyright year (#9424)
-- Change more than one image input for Replicate Multi-modal models from error to warning (#9360)
+- Change more than one image input to Replicate Multi-modal models from error to warning (#9360)
 - Removed GPT-Licensed `aiostream` dependency (#9403)
 - Fix result of BedrockEmbedding with Cohere model (#9396)
 - Only capture valid tool names in react agent (#9412)
@@ -172,7 +196,7 @@
 ### Bug Fixes / Nits
 
 - Fixed bug in formatting chat prompt templates when estimating chunk sizes (#9025)
-- Sandboxed Pandas execution, remidiate CVE-2023-39662 (#8890)
+- Sandboxed Pandas execution, remediate CVE-2023-39662 (#8890)
 - Restored `mypy` for Python 3.8 (#9031)
 - Loosened `dataclasses-json` version range,
   and removes unnecessary `jinja2` extra from `pandas` (#9042)
