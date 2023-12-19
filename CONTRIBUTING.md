@@ -277,7 +277,7 @@ We would love your help in making the project cleaner, more robust, and more und
 
 ### Environment Setup
 
-LlamaIndex is a Python package. We've tested primarily with Python versions >= 3.8. Here's a quick
+LlamaIndex is a Python package. We've primarily tested with Python versions >= 3.8. Here's a quick
 and dirty guide to getting your environment setup.
 
 First, create a fork of LlamaIndex, by clicking the "Fork" button on the [LlamaIndex Github page](https://github.com/jerryjliu/llama_index).
