@@ -12,7 +12,6 @@ Here are some relevant resources:
 - [RAGs](https://blog.llamaindex.ai/introducing-rags-your-personalized-chatgpt-experience-over-your-data-2b9d140769b1), a project inspired by OpenAI's GPTs that lets you build a low-code chatbot over your data using Streamlit
 - Our [OpenAI agents](/module_guides/deploying/agents/modules.md) are all chatbots in nature
 
-
 ## External sources
 
 - [Building a chatbot with Streamlit](https://blog.streamlit.io/build-a-chatbot-with-custom-data-sources-powered-by-llamaindex/)
