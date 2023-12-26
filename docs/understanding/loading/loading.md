@@ -96,7 +96,7 @@ index = VectorStoreIndex.from_documents(
 
 You can also define these steps explicitly.
 
-You can do this by either using our transformation modules (text splitters, metadata extractors, etc.) as standalone components, or compose them in our declarative [Transformation Pipeline interface](/module_guides/loading/ingestion_pipeline/root.md).
+You can do this by either using our transformation modules (text splitters, metadata extractors, etc.) as standalone components, or compose them in our declarative [Transformation Pipeline interface](/docs/module_guides/loading/ingestion_pipeline/root.md).
 
 Let's walk through the steps below.
 
