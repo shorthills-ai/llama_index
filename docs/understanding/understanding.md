@@ -14,7 +14,7 @@ There are a series of key steps involved in building any LLM-powered application
 
 - **[Loading](/docs/understanding/loading/loading.md)**: getting your data from wherever it lives, whether that's unstructured text, PDFs, databases, or APIs to other applications. LlamaIndex has hundreds of connectors to every data source over at [LlamaHub](https://llamahub.ai/).
 
-- **[Indexing](/understanding/indexing/indexing.md)**: once you've got your data there are an infinite number of ways to structure access to that data to ensure your applications is always working with the most relevant data. LlamaIndex has a huge number of these strategies built-in and can help you select the best ones.
+- **[Indexing](/docs/understanding/indexing/indexing.md)**: once you've got your data there are an infinite number of ways to structure access to that data to ensure your applications is always working with the most relevant data. LlamaIndex has a huge number of these strategies built-in and can help you select the best ones.
 
 - **[Storing](/understanding/storing/storing.md)**: you will probably find it more efficient to store your data in indexed form, or pre-processed summaries provided by an LLM, often in a specialized database known as a `Vector Store` (see below). You can also store your indexes, metadata and more.
 

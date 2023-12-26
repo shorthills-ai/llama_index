@@ -1,5 +1,48 @@
 # ChangeLog
 
+## Unreleased
+
+### Bug Fixes / Nits
+
+- Improve BM25Retriever performance (#9675)
+
+## [0.9.20] - 2023-12-21
+
+### New Features
+
+- Added `insert_batch_size` to limit number of embeddings held in memory when creating an index, defaults to 2048 (#9630)
+- Improve auto-retrieval (#9647)
+- Configurable Node ID Generating Function (#9574)
+- Introduced action input parser (#9575)
+- qdrant sparse vector support (#9644)
+- Introduced upserts and delete in ingestion pipeline (#9643)
+- Add Zilliz Cloud Pipeline as a Managed Index (#9605)
+- Add support for Google Gemini models via VertexAI (#9624)
+- support allowing additional metadata filters on autoretriever (#9662)
+
+### Bug Fixes / Nits
+
+- Fix pip install commands in LM Format Enforcer notebooks (#9648)
+- Fixing some more links and documentations (#9633)
+- some bedrock nits and fixes (#9646)
+
+## [0.9.19] - 2023-12-20
+
+### New Features
+
+- new llama datasets `LabelledEvaluatorDataset` & `LabelledPairwiseEvaluatorDataset` (#9531)
+
+## [0.9.18] - 2023-12-20
+
+### New Features
+
+- multi-doc auto-retrieval guide (#9631)
+
+### Bug Fixes / Nits
+
+- fix(vllm): make Vllm's 'complete' method behave the same as other LLM class (#9634)
+- FIx Doc links and other documentation issue (#9632)
+
 ## [0.9.17] - 2023-12-19
 
 ### New Features
@@ -34,7 +77,7 @@
 - Gemini Model Checks (#9563)
 - Update OpenAI fine-tuning with latest changes (#9564)
 - fix/Reintroduce `WHERE` filter to the Sparse Query for PgVectorStore (#9529)
-- Update Ollama API for ollama v0.1.16 (#9558)
+- Update Ollama API to ollama v0.1.16 (#9558)
 - ollama: strip invalid `formatted` option (#9555)
 - add a device in optimum push #9541 (#9554)
 - Title vs content difference for Gemini Embedding (#9547)
