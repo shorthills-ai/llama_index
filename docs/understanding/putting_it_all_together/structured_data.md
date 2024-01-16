@@ -8,7 +8,7 @@ unstructured data, as well as analyze this structured data through augmented tex
 
 This guide helps walk through each of these capabilities. Specifically, we cover the following topics:
 
-- **Setup**: Defining up our example SQL Table.
+- **Setup**: Defining our example SQL Table.
 - **Building our Table Index**: How to go from sql database to a Table Schema Index
 - **Using natural language SQL queries**: How to query our SQL database using natural language.
 
