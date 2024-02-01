@@ -8,7 +8,6 @@ TruLens is an [opensource](https://github.com/truera/trulens) package that provi
 
 ![TruLens Architecture](https://www.trulens.org/assets/images/TruLens_Architecture.png)
 
-
 As you iterate on new versions of your LLM application, you can compare their performance across all of the different quality metrics you've set up. You'll also be able to view evaluations at a record level, and explore the app metadata for each record.
 
 ### Installation and Setup
