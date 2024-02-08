@@ -28,7 +28,7 @@ If you don't wish to use OpenAI, consider setting up a local LLM and embedding m
 
 A full guide to using and configuring LLMs available [here](/docs/module_guides/models/llms.md).
 
-A full guide to using and configuring embedding models is available [here](/docs/module_guides/models/embeddings.md).
+A full guide to using and configuring embedding models is available [here](/module_guides/models/embeddings.md).
 
 ## Installation from Source
 
