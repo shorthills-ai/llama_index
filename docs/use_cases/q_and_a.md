@@ -1,8 +1,8 @@
 # Q&A
 
-One of the most common use-cases for an LLM application is to answer questions about a set of documents. LlamaIndex has rich support for many forms of question & answering.
+One of the most common use cases for an LLM application is to answer questions about a set of documents. LlamaIndex has rich support for many forms of question & answering.
 
-## Types of question answering use cases
+## Types of question-answering use cases
 
 Q&A has all sorts of sub-types, such as:
 
@@ -15,16 +15,16 @@ Q&A has all sorts of sub-types, such as:
 
 ### Where to search
 
-- **Over documents**: LlamaIndex can pull in unstructured text, PDFs, Notion and Slack documents and more and index the data within them.
+- **Over documents**: LlamaIndex can pull in unstructured text, PDFs, Notion and Slack documents, and more and index the data within them.
   - [Example of search over documents](combine-multiple-sources)
   - [Building a multi-document agent over the LlamaIndex docs](/docs/examples/agent/multi_document_agents-v1.ipynb)
 - **Over structured data**: if your data already exists in a SQL database, as JSON or as any number of other structured formats, LlamaIndex can query the data in these sources.
-  - [Searching Pandas tables](/docs/examples/query_engine/pandas_query_engine.ipynb)
-  - [Text to SQL](/docs/examples/index_structs/struct_indices/SQLIndexDemo.ipynb)
+  - [Searching Pandas tables](/examples/query_engine/pandas_query_engine.ipynb)
+  - [Text to SQL](/examples/index_structs/struct_indices/SQLIndexDemo.ipynb)
 
 ### How to search
 
-- **Combine multiple sources**: is some of your data in Slack, some in PDFs, some in unstructured text? LlamaIndex can combine queries across an arbitrary number of sources and combine them.
+- **Combine multiple sources**: is some of your data in Slack, some in PDFs, and some in unstructured text? LlamaIndex can combine queries across an arbitrary number of sources and combine them.
   - [Example of combining multiple sources](combine-multiple-sources)
 - **Route across multiple sources**: given multiple data sources, your application can first pick the best source and then "route" the question to that source.
   - [Example of routing across multiple sources](route-across-multiple-sources)
