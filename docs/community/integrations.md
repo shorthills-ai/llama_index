@@ -1,6 +1,6 @@
 # Integrations
 
-LlamaIndex has a number of community integrations, from vector stores, to prompt trackers, tracers, and more!
+LlamaIndex has several community integrations, from vector stores, to prompt trackers, tracers, and more!
 
 ## LlamaPacks -- Code Templates
 
@@ -25,11 +25,11 @@ The full set of agent tools are found on [LlamaHub](https://llamahub.ai/)
 
 ## LLMs
 
-We support [a huge number of LLMs](/docs/module_guides/models/llms/modules.md).
+We support [a huge number of LLMs](/module_guides/models/llms/modules.md).
 
 ## Observability/Tracing/Evaluation
 
-Check out our [one-click observability](/docs/module_guides/observability/observability.md) page
+Check out our [one-click observability](/module_guides/observability/observability.md) page
 for full tracing integrations.
 
 ```{toctree}
