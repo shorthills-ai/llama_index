@@ -8,7 +8,7 @@ This ingestion pipeline typically consists of three main stages:
 2. Transform the data
 3. Index and store the data
 
-We cover indexing/storage in [future](/docs/understanding/indexing/indexing.md) [sections](/docs/understanding/storing/storing.md). In this guide we'll mostly talk about loaders and transformations.
+We cover indexing/storage in [future](/understanding/indexing/indexing.md) [sections](/understanding/storing/storing.md). In this guide, we'll mostly talk about loaders and transformations.
 
 ## Loaders
 
@@ -16,7 +16,7 @@ Before your chosen LLM can act on your data you need to load it. The way LlamaIn
 
 ### Loading using SimpleDirectoryReader
 
-The easiest reader to use is our SimpleDirectoryReader, which creates documents out of every file in a given directory. It is built in to LlamaIndex and can read a variety of formats including Markdown, PDFs, Word documents, PowerPoint decks, images, audio and video.
+The easiest reader to use is our SimpleDirectoryReader, which creates documents out of every file in a given directory. It is built into LlamaIndex and can read a variety of formats including Markdown, PDFs, Word documents, PowerPoint decks, images, audio and video.
 
 ```python
 from llama_index import SimpleDirectoryReader
@@ -96,15 +96,15 @@ index = VectorStoreIndex.from_documents(
 
 You can also define these steps explicitly.
 
-You can do this by either using our transformation modules (text splitters, metadata extractors, etc.) as standalone components, or compose them in our declarative [Transformation Pipeline interface](/module_guides/loading/ingestion_pipeline/root.md).
+You can do this by either using our transformation modules (text splitters, metadata extractors, etc.) as standalone components or composing them in our declarative [Transformation Pipeline interface](/module_guides/loading/ingestion_pipeline/root.md).
 
 Let's walk through the steps below.
 
 #### Splitting Your Documents into Nodes
 
-A key step to process your documents is to split them into "chunks"/Node objects. The key idea is to process your data into bite-sized pieces that can be retrieved / fed to the LLM.
+A key step to process your documents is to split them into "chunks"/Node objects. The key idea is to process your data into bite-sized pieces that can be retrieved/fed to the LLM.
 
-LlamaIndex has support for a wide range of [text splitters](/module_guides/loading/node_parsers/modules.md), ranging from paragraph/sentence/token based splitters to file-based splitters like HTML, JSON.
+LlamaIndex has support for a wide range of [text splitters](/module_guides/loading/node_parsers/modules.md), ranging from paragraph/sentence/token-based splitters to file-based splitters like HTML, and JSON.
 
 These can be [used on their own or as part of an ingestion pipeline](/module_guides/loading/node_parsers/root.md).
 
