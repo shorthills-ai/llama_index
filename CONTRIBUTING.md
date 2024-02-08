@@ -36,12 +36,12 @@ Below, we will describe what each module does, give a high-level idea of the int
 
 #### Data Loaders
 
-A data loader ingests data in any format from anywhere into `Document` objects, which can then be parsed and indexed.
+A data loader ingests data of any format from anywhere into `Document` objects, which can then be parsed and indexed.
 
 **Interface**:
 
 - `load_data` takes arbitrary arguments as input (e.g. path to data), and outputs a sequence of `Document` objects.
-- `lazy_load_data` takes arbitrary arguments as input (e.g. path to data), and outputs an iterable object of `Document` objects. This is a lazy version of `load_data`, which is useful for handling large datasets.
+- `lazy_load_data` takes arbitrary arguments as input (e.g. path to data), and outputs an iterable object of `Document` objects. This is a lazy version of `load_data`, which is useful for large datasets.
 
 > **Note**: If only `lazy_load_data` is implemented, `load_data` will be delegated to it.
 
@@ -62,8 +62,7 @@ The preferred way to contribute is by making a PR at [LlamaHub Github](https://g
 
 #### Node Parser
 
-A node parser parses `Document` objects into `Node` objects (atomic unit of data that LlamaIndex operates over, e.g., chunk of text, image, or table).
-
+A node parser parses `Document` objects into `Node` objects (atomic units of data that LlamaIndex operates over, e.g., chunk of text, image, or table).
 It is responsible for splitting text (via text splitters) and explicitly modeling the relationship between units of data (e.g. A is the source of B, C is a chunk after D).
 
 **Interface**: `get_nodes_from_documents` takes a sequence of `Document` objects as input, and outputs a sequence of `Node` objects.
@@ -72,7 +71,7 @@ It is responsible for splitting text (via text splitters) and explicitly modelin
 
 - [Simple Node Parser](https://github.com/jerryjliu/llama_index/blob/main/llama_index/node_parser/simple.py)
 
-See [the API reference](https://gpt-index.readthedocs.io/en/latest/api_reference/index.html) for full details.
+See [the API reference](https://docs.llamaindex.ai/en/latest/api_reference/index.html) for full details.
 
 **Ideas**:
 
@@ -99,9 +98,9 @@ Text splitter splits a long text `str` into smaller text `str` chunks with desir
 Under the hood, LlamaIndex also supports a swappable **storage layer** that allows you to customize Document Stores (where ingested documents (i.e., `Node` objects) are stored), and Index Stores (where index metadata are stored)
 
 We have an underlying key-value abstraction backing the document/index stores.
-Currently, we support in-memory and MongoDB storage for these stores. Open to contributions!
+Currently we support in-memory and MongoDB storage for these stores. Open to contributions!
 
-See [Storage guide](https://gpt-index.readthedocs.io/en/latest/how_to/storage.html) for details.
+See [Storage guide](https://docs.llamaindex.ai/en/stable/module_guides/storing/kv_stores.html) for details.
 
 ---
 
@@ -109,10 +108,10 @@ See [Storage guide](https://gpt-index.readthedocs.io/en/latest/how_to/storage.ht
 
 A managed index is used to represent an index that's managed via an API, exposing API calls to index documents and query documents.
 
-Currently, we support the [VectaraIndex](https://github.com/run-llama/llama_index/tree/ca09272af000307762d301c99da46ddc70d3bfd2/llama_index/indices/managed/vectara).
+Currently we support the [VectaraIndex](https://github.com/run-llama/llama_index/tree/ca09272af000307762d301c99da46ddc70d3bfd2/llama_index/indices/managed/vectara).
 Open to contributions!
 
-See [Managed Index docs](https://gpt-index.readthedocs.io/en/stable/community/integrations/managed_indices.html) for details.
+See [Managed Index docs](https://docs.llamaindex.ai/en/stable/community/integrations/managed_indices.html) for details.
 
 ---
 
@@ -138,7 +137,7 @@ These serve as the main data store and retrieval engine for our vector index.
 
 - See a vector database out there that we don't support yet? Make a PR!
 
-See [reference](https://gpt-index.readthedocs.io/en/latest/reference/indices/vector_stores/stores.html) for full details.
+See [reference](https://docs.llamaindex.ai/en/stable/api_reference/indices/vector_store.html) for full details.
 
 ---
 
@@ -191,7 +190,7 @@ They may take in other query engine classes as input too.
 #### Query Transforms
 
 A query transform augments a raw query string with associated transformations to improve index querying.
-This can interpreted as a pre-processing stage before the core index query logic is executed.
+This can interpreted as a pre-processing stage, before the core index query logic is executed.
 
 **Interface**: `run` takes in a `str` or `Querybundle` as input, and outputs a transformed `QueryBundle`.
 
@@ -200,7 +199,7 @@ This can interpreted as a pre-processing stage before the core index query logic
 - [Hypothetical Document Embeddings](https://github.com/jerryjliu/llama_index/blob/main/llama_index/indices/query/query_transform/base.py#L77)
 - [Query Decompose](https://github.com/jerryjliu/llama_index/blob/main/llama_index/indices/query/query_transform/base.py#L124)
 
-See [guide](https://gpt-index.readthedocs.io/en/latest/how_to/query/query_transformations.html#hyde-hypothetical-document-embeddings) for more information.
+See [guide](https://docs.llamaindex.ai/en/stable/optimizing/advanced_retrieval/query_transformations.html#hyde-hypothetical-document-embeddings) for more information.
 
 ---
 
@@ -237,14 +236,14 @@ An output parser enables us to extract structured output from the plain text out
 **Interface**:
 
 - `format`: formats a query `str` with structured output formatting instructions, and outputs the formatted `str`
-- `parse`: takes a `str` (from LLM response) as input, and gives a parsed tructured output (optionally also validated, error-corrected).
+- `parse`: takes a `str` (from LLM response) as input, and gives a parsed structured output (optionally also validated, error-corrected).
 
 **Examples**:
 
 - [Guardrails Output Parser](https://github.com/jerryjliu/llama_index/blob/main/llama_index/output_parsers/guardrails.py)
 - [Langchain Output Parser](https://github.com/jerryjliu/llama_index/blob/main/llama_index/output_parsers/langchain.py)
 
-See [guide](https://gpt-index.readthedocs.io/en/latest/how_to/output_parsing.html) for more information.
+See [guide](https://docs.llamaindex.ai/en/stable/module_guides/querying/structured_outputs/output_parser.html) for more information.
 
 ---
 
@@ -262,7 +261,7 @@ Please feel free to open an issue and/or assign an issue to yourself.
 
 If you have applied LlamaIndex to a unique use-case (e.g. interesting dataset, customized index structure, complex query), we would love your contribution in the form of:
 
-1. a guide: e.g. [guide to LlamIndex + Structured Data](https://gpt-index.readthedocs.io/en/latest/guides/tutorials/sql_guide.html)
+1. a guide: e.g. [guide to LlamIndex + Structured Data](https://docs.llamaindex.ai/en/stable/understanding/putting_it_all_together/structured_data.html)
 2. an example notebook: e.g. [Composable Indices Demo](https://github.com/jerryjliu/llama_index/blob/main/docs/examples/composable_indices/ComposableIndices-Prior.ipynb)
 
 ### 4. 🧪 Add Experimental Features
@@ -334,7 +333,7 @@ make test
 For changes that involve entirely new features, it may be worth adding an example Jupyter notebook to showcase
 this feature.
 
-Example notebooks can be found in this folder: <https://github.com/jerryjliu/llama_index/tree/main/examples>.
+Example notebooks can be found in this folder: <https://github.com/run-llama/llama_index/tree/main/docs/examples>.
 
 ### Creating a pull request
 
