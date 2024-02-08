@@ -22,11 +22,11 @@ Our docs are structured so you should be able to roughly progress simply by movi
 
 3. **Understanding LlamaIndex**
 
-   Once you've completed the Getting Started section, this is the next place to go. In a series of bite-sized tutorials we'll walk you through every stage of building a production LlamaIndex application and help you level up on the concepts of the library and LLMs in general as you go.
+   Once you've completed the Getting Started section, this is the next place to go. In a series of bite-sized tutorials, we'll walk you through every stage of building a production LlamaIndex application and help you level up on the concepts of the library and LLMs in general as you go.
 
 4. **Optimizing**
 
-   Already got a working LlamaIndex application and looking to further refine it? Our optimizing section will walk you through the [first things you should try](/docs//optimizing/basic_strategies/basic_strategies.md) like your embedding model and chunk size through progressively more complex and subtle customizations all the way to [fine tuning](/docs/optimizing/fine-tuning/fine-tuning.md) your model.
+   Already got a working LlamaIndex application and looking to further refine it? Our optimizing section will walk you through the [first things you should try](/docs//optimizing/basic_strategies/basic_strategies.md) like your embedding model and chunk size through progressively more complex and subtle customizations to [fine tuning](/optimizing/fine-tuning/fine-tuning.md) your model.
 
 5. **Module guides**
 
